@@ -1,7 +1,19 @@
-# grpc-rust
+# grpc-rust-usning tonic crate
+
+## Steps to build
+
+`git clone https://github.com/nagarajmanjunath/grpc-rust.git`
+
+`cd grpc-rust`
+
+`cargo build`
 
 
+## Steps to Run
+
+* Run the server
+`cargo run --bin helloworld-server`
 
 
-
-protoc --rust_out=./proto/src/ --grpc_out=./proto/src/ --plugin=protoc-gen-grpc=`which grpc_rust_plugin` ./proto/helloworld.proto
+* Run the client
+`cargo run --bin helloworld-client `
